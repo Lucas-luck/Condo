@@ -1,0 +1,183 @@
+/* Flexbox no body para alinhar os elementos */
+body {
+    display: flex;
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+    align-items: center;       /* Alinha o conteúdo verticalmente ao centro */
+    width: 100%;
+    height: 100%;
+    margin: 0;                 /* Remove qualquer margem no body */
+    top: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Imagem de fundo */
+.imagemFundo {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(to right, rgb(255, 255, 255) 0%, rgba(255,255,255,0) 100%),
+        url('../img/fundoLogin.svg');
+    background-size: 40% 100%, cover;
+    background-position: left top, center;
+    background-repeat: no-repeat, no-repeat;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* ------------------------------------------------------------------------------------------------
+Conteúdo - obs: usei para mexer na altura e centralizar a pagina a esquerda
+--------------------------------------------------------------------------------------------------*/
+.conteudo {
+    background-color: rgba(255, 255, 255, 0);
+    text-align: left;
+    margin: 2% 40px;    /*mexe na altura para centralizar a tela ao canto esquerdo*/
+    padding: 15px;
+    width: 800px; /* Define uma largura fixa para o conteúdo */
+}
+
+/* Campo de e-mail */
+#email, #password {
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 35px;
+    box-sizing: border-box; 
+}
+
+/* Agrupamento da senha e ícone */
+.input-container {
+    position: relative;
+    width: 34rem;
+    margin: 5px 0 -10px;
+
+}
+
+.erro {
+    color: red;
+    font-size: 12px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    display: none;
+  }
+  
+  .input-invalido {
+    border: 1px solid red;
+  }
+  
+
+
+/* Ícone de olho dentro da caixa */
+#eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(80%);
+    cursor: pointer;
+    color: #333;
+}
+
+#recuperarSenha {
+    display:block;
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.652);
+    margin: 8px 0;
+    font-size: 13px;
+    display: inline;
+}
+
+#recuperarSenha:hover {
+    text-decoration: underline;
+    color: rgb(0, 0, 255);
+}
+
+/* Estilos do botão */
+#acessar {
+    display: block;        /* Exibe como bloco para ocupar toda a largura disponível */
+    width: 10rem;
+    height: 36px;
+    background-color: #2b5274; /* Cor de fundo */
+    color: white;              /* Cor do texto */
+    padding: 5px 15px;        /* Espaçamento interno */
+    border-radius: 5px;        /* Borda arredondada */
+    border: none;              /* Remove a borda */
+    font-size: 16px;           /* Tamanho da fonte */
+    cursor: pointer;          /* Cursor de mão ao passar por cima */
+    transition: transform 0.1s ease, box-shadow 0.1s ease; /* Transições rápidas */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Sombra padrão do botão */
+    margin: 20px 220px;
+
+}
+
+/* Efeito de clique - simula pressionamento */
+#acessar:active {
+    transform: translateY(4px); /* Desce o botão para dar sensação de estar sendo pressionado */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra mais suave e menor para simular profundidade */
+}
+
+/* Efeito de hover (opcional, para efeito visual quando o mouse passa) */
+#acessar:hover {
+    background-color: #1c3d52; /* Muda a cor do fundo ao passar o mouse */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+}
+
+.linha-divisoria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    margin: 35px 0;
+}
+
+.linha-divisoria::before,
+.linha-divisoria::after {
+    content: "";
+    flex-grow: 1;
+    border-top: 1px solid #000; /* Linha contínua */
+    margin: 0 10px; /* Espaçamento entre a linha e o texto */
+}
+
+.linha-divisoria span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.google-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    height: 16px;
+    margin: 20px 205px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #444;
+    background-color: white;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.google-login:hover {
+    background-color: #f5f5f5;
+}
+
+.google-login img {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.consultoria {
+    font-size: 12px;
+    
+}

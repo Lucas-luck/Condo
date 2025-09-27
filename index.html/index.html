@@ -1,0 +1,252 @@
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CondoCash Reforma</title>
+
+    <link rel="icon" type="image/png" href="img/iconI.png">
+
+
+    <!-- SEO -->
+  <meta name="description" content="Empresa especializada em reforma de prédios com segurança e qualidade. Veja nossos serviços e transformações." />
+  <meta name="author" content="CondoCash Reforma" />
+  <meta name="keywords" content="reforma de prédios, restauração, impermeabilização, modernização, construção" />
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Seu CSS -->
+  <link rel="stylesheet" href="layout/principal.css" />
+
+
+
+  <!-- Bootstrap JS (Bundle inclui Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    
+  </head>
+
+  <body class="home">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
+            <img src="img/Logo.png" alt="Logo da empresa CondoCash" class="logo" />
+          </a>
+
+          <!-- Botão do menu hambúrguer -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu" aria-expanded="false" aria-label="Alternar navegação">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Itens do menu -->
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html" target="_blank" rel="noopener noreferrer">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="sobre.html">Sobre</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://condocash.com.br/">Site Oficial</a>
+              </li>
+              <li class="nav-item"> 
+                <a class="nav-link btn-9" href="login.html" target="_blank" rel="noopener noreferrer">Login</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </nav>
+    </header>
+
+
+
+    <section class="conteudo">
+      <div class="descricao">
+        <h2>Transformamos estruturas com qualidade e segurança</h2>
+        <br>
+        <br>
+        <p id="typewriter-descricaoP" class="cursor"> </p>
+      </div>
+    </section>
+
+    <!-- Carrossel -->
+
+    <div class="container-fluid p-0">
+      <div class="carouselEsteira-wrapper">
+        <div class="carouselEsteira-track d-flex">
+
+          <!-- Cada item chama a função abrirModal com imagem e descrição -->
+          <div class="carouselEsteira-item" onclick="abrirModal('img/construcao1.jpg', 'Reformamos residências e prédios com atenção a cada detalhe. Garantimos telhados seguros, resistentes e à prova de intempéries. Nossas equipes seguem padrões técnicos para reforçar toda a estrutura. Utilizamos materiais de alta qualidade e mão de obra especializada. O resultado é uma reforma duradoura, segura e visualmente renovada.')">
+            <img src="img/construcao1.jpg" class="img-fluid rounded" alt="Antes da reforma" />
+            <div class="descricao-hover">Reformamos residências e prédios, garantindo telhados seguros e estruturas reforçadas.</div>
+          </div>
+
+          <div class="carouselEsteira-item" onclick="abrirModal('img/construcao2.jpg', 'Construímos casas e prédios com qualidade e planejamento desde a fundação. Nossa infraestrutura é completa, atendendo às exigências modernas de construção. Incluímos toda a parte elétrica com fiação segura e devidamente instalada. Trabalhamos com profissionais capacitados e materiais certificados. Entregamos obras prontas para uso, com segurança e eficiência garantidas.')">
+            <img src="img/construcao2.jpg" class="img-fluid rounded" alt="Durante a reforma" />
+            <div class="descricao-hover">Construímos casas e prédios com infraestrutura completa, incluindo o sistema de fiação elétrica.</div>
+          </div>
+
+          <div class="carouselEsteira-item" onclick="abrirModal('img/construcao3.jpg', 'Executamos pintura profissional em paredes internas e externas com acabamento impecável. Utilizamos tintas de alta durabilidade e técnicas que valorizam cada ambiente. Além disso, realizamos serviços completos de encanamento residencial. Garantimos instalações seguras, sem vazamentos e com fluxo eficiente de água. Tudo é feito com precisão, limpeza e respeito ao espaço do cliente.')">
+            <img src="img/construcao3.jpg" class="img-fluid rounded" alt="Depois da reforma" />
+            <div class="descricao-hover">Executamos pintura profissional em paredes e serviços completos de encanamento residencial.</div>
+          </div>
+
+          <div class="carouselEsteira-item" onclick="abrirModal('img/construcao4.jpg', 'Demolimos residências e prédios com total segurança, seguindo normas rigorosas para proteger as pessoas e o entorno. Nossos processos são rápidos, eficientes e planejados em cada detalhe.Utilizamos equipamentos modernos para reduzir riscos e impactos. Tudo isso com profundo respeito ao meio ambiente e à comunidade local.')">
+            <img src="img/construcao4.jpg" class="img-fluid rounded" alt="Durante a reforma" />
+            <div class="descricao-hover">Demolimos residências e prédios com segurança, rapidez e respeito ao meio ambiente.</div>
+          </div>
+
+          <div class="carouselEsteira-item" onclick="abrirModal('img/construcao5.jpg', 'Realizamos reformas em museus antigos com extremo cuidado e responsabilidade. Cada etapa é planejada para preservar a integridade do patrimônio histórico. Trabalhamos com técnicas especializadas para manter a arte original intacta. Toda intervenção é feita com o apoio de profissionais qualificados e criteriosos. O resultado é uma renovação que respeita o passado e valoriza a história.')">
+            <img src="img/construcao5.jpg" class="img-fluid rounded" alt="Depois da reforma" />
+            <div class="descricao-hover">Realizamos reformas em museus antigos com cuidado, preservando toda a arte original.</div>
+          </div>
+
+          <div class="carouselEsteira-item" onclick="abrirModal('img/construcao6.png', 'Entregamos soluções eficazes e inovadoras em cada projeto que assumimos. Buscamos sempre unir tecnologia, técnica e criatividade na execução dos serviços. Nosso foco está na sua satisfação, entendendo e superando suas expectativas. Trabalhamos com planejamento, comprometimento e atenção a cada detalhe. O resultado final reflete qualidade, confiança e resultados concretos.')">
+            <img src="img/construcao6.png" class="img-fluid rounded" alt="Depois da reforma" />
+            <div class="descricao-hover">Entregamos soluções eficazes e inovadoras, focando na sua satisfação e resultados.</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  <section class="carouselEsteira-container">
+    <section class="descricao">
+      <p id="typewriter-paragrafo" class="cursor"></p>
+    </section>
+
+
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <span class="fechar" onclick="fecharModal()">&times;</span>
+
+    <div class="modal-corpo">
+      <img class="modal-imagem" id="modalImagem">
+      <div id="modalDescricao" class="modal-descricao"></div>
+    </div>
+    
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+    <!-- Serviços -->
+    <section class="servicos">
+      <h3>Serviços Oferecidos:</h3>
+      <ul class="list-unstyled">
+        <li>✅ Restauração de fachadas</li>
+        <li>✅ Impermeabilização de lajes e coberturas</li>
+        <li>✅ Reforço estrutural</li>
+        <li>✅ Pintura predial</li>
+        <li>✅ Modernização de elevadores</li>
+      </ul>
+    </section>
+
+    <br>
+    <br>
+
+    <!-- Depoimentos -->
+    
+    <section class="depoimentos">
+    <h3>O que nossos clientes dizem:</h3>
+  <br>
+  <br>
+    <div class="depoimentos-container">
+      <!-- Primeira linha -->
+      <div class="depoimento">
+        <div class="topo">
+          <span class="nome">João – Síndico</span>
+          <span class="estrelas">⭐⭐⭐⭐⭐</span>
+        </div>
+        <p>"A reforma foi incrível! Profissionais competentes e prazo cumprido. O prédio ficou como novo."</p>
+      </div>
+
+      <div class="depoimento">
+        <div class="topo">
+          <span class="nome">Larissa – Administradora</span>
+          <span class="estrelas">⭐⭐⭐⭐⭐</span>
+        </div>
+        <p>"Atendimento excelente, equipe organizada e resultado impecável. Recomendo muito a CondoCash!"</p>
+      </div>
+
+      <div class="depoimento">
+        <div class="topo">
+          <span class="nome">Carlos – Morador</span>
+          <span class="estrelas">⭐⭐⭐⭐⭐</span>
+        </div>
+        <p>"Ótima comunicação durante todo o processo. Superaram as expectativas com acabamento perfeito."</p>
+      </div>
+
+      <!-- Segunda linha em baixo -->
+
+      <div class="depoimento">
+        <div class="topo">
+          <span class="nome">Luciana – Síndica</span>
+          <span class="estrelas">⭐⭐⭐⭐⭐</span>
+        </div>
+        <p>"Empresa muito profissional. Pontualidade, limpeza e qualidade impecável durante toda a reforma."</p>
+      </div>
+
+      <div class="depoimento">
+        <div class="topo">
+          <span class="nome">Marcos – Engenheiro</span>
+          <span class="estrelas">⭐⭐⭐⭐⭐</span>
+        </div>
+        <p>"A equipe é muito bem treinada. Planejamento e execução excelentes. Voltarei a contratar com certeza."</p>
+      </div>
+
+      <div class="depoimento">
+        <div class="topo">
+          <span class="nome">Rafaela – Moradora</span>
+          <span class="estrelas">⭐⭐⭐⭐⭐</span>
+        </div>
+        <p>"Mudou completamente o visual do prédio. Trabalho silencioso, limpo e bem acabado. Muito satisfeita."</p>
+      </div>
+    </div>
+  </section>
+  <br>
+
+    <!-- Mapa com centro de São Paulo -->
+    <section class="localizacao">
+      <h3>Localização da nossa empresa:</h3>
+      <br>
+      <br>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.602923791497!2d-46.6831282!3d-23.582700499999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5769b712e615%3A0xe9a06d96ab57976c!2sR.%20Iguatemi%2C%20448%20-%20cj%20409%20-%20Itaim%20Bibi%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001451-010!5e0!3m2!1spt-BR!2sbr!4v1752928038911!5m2!1spt-BR!2sbr" 
+      width="600" 
+      height="450" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+    <!-- Botões -->
+    <div class="botoes">
+      <a href="https://api.whatsapp.com/send?phone=5511943003998" class="whatsapp" aria-label="Entre em contato pelo WhatsApp">WhatsApp</a>
+      <a href="https://www.instagram.com/condocash/" class="instagram" aria-label="Siga no Instagram">Instagram</a>
+    </div>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="voltarTopo" aria-label="Voltar ao topo da página">↑</button>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+      <p><span class="destaque">&copy; 2025 CondoCash.</span> Todos os direitos reservados.</p>
+      <p>Email: <span class="destaque"><a href="mailto:comercial@condocash.com.br">comercial@condocash.com.br</a></span> | CNPJ: <span class="cnpj">18.536.571/0001-00</span></p>
+    </footer> 
+
+    <script src="layout/script.js" defer></script>
+  </body>
+  </html>

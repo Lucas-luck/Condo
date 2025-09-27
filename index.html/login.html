@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link correto do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="layout/login.css">
+    <script src="layout/login.js" defer></script>
+    <title>Login</title>
+</head>
+<body class="home">
+    <div class="imagemFundo"></div>
+    
+    <div class="conteudo">  
+        
+        <h1>Seja bem-vindo à Condocash, um novo conceito para condomínios!</h1>
+        <p>Através de nosso portal, você terá acesso a modalidades de financiamento <br>para benfeitorias no seu condomínio - seja ele residencial ou comercial.</p>
+        <h1>Oferecemos soluções de créditos com:</h1>
+        <p>Agilidade, Praticidade, Segurança, Facilidade e sem burocracia.</p>
+
+        <h3>Faça seu Login:</h3>
+        
+        <form id="login-form" novalidate>
+        <div class="input-container">
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required pattern=".+@.+\..+" title="Por Favor, insira um e-mail válido">
+            <input type="password" id="password" name="password"
+            placeholder="Digite sua senha" 
+            required maxlength="6" 
+            pattern="^(?=[^@#!]*[@#!][^@#!]*$)[A-Za-z0-9@#!]{4,6}$"
+            title="A senha deve ter entre 4 e 6 caracteres e conter exatamente 1 símbolo (@, # ou !)"
+            >
+            <div class="erro" id="erro-senha"></div>
+            <span id="eye-icon" class="fa-solid fa-eye"></span>
+        </div>
+
+        <button type="submit" id="acessar">Acessar</button>
+        </form>
+        
+        <p class="consultoria">Está acessando pela primeira vez? Solicite o <a href="#" id="recuperarSenha">acesso</a> com o seu consultor.</p>
+        
+        
+
+        <div class="linha-divisoria">
+            <span>OU</span>
+        </div>
+
+        <a href="https://accounts.google.com" class="google-login" target="_blank">
+            <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google logo">
+        </a>
+        
+    </div>
+
+    
+</body>
+</html>

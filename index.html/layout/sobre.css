@@ -1,0 +1,576 @@
+
+/* ----------------------------
+   🌐 1. Estilização Global
+---------------------------- */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #3a0f56 !important;
+}
+
+/* Estiliza a navbar */
+.navbar {
+  border-radius: 15px;
+  padding: 12px 0;
+  background-color: #00000000 !important; /* Cor de fundo */
+}
+
+/* Estiliza o logo */
+.navbar-brand img.logo {
+  height: 4auto;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand img.logo:hover {
+  transform: scale(1.05);
+}
+
+.navbar-nav .nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 6px;
+
+  /* Aqui está a transição suave de cor */
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #9600d6;
+}
+
+
+
+
+/* ----------------------------
+   🔰 Logo
+---------------------------- */
+.logo {
+  height: 35px;
+  width: auto;
+  margin-left: 20px;
+}
+
+
+header {
+  
+  padding: 20px;
+  text-align: center;
+  position:relative;
+  z-index: 1;
+}
+
+
+
+nav a {
+  margin: 0 15px;
+  color: #ffffff;
+  text-decoration: none !important;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #9600d6;
+}
+
+/* ----------------------------
+   Página do sobre
+---------------------------- */
+
+
+
+
+body.home::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../img/Predio1.jpg') center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+  opacity: 0.7; /* opcional: deixa um tom translúcido como no segundo */
+}
+
+.sobre-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  margin: 170px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.sobre-titulo h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.sobre-titulo p,
+.sobre-titulo2 p {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: #f0f0f0;
+}
+
+/* ----------------------------
+   5. Localização (mapa)
+---------------------------- */
+.localizacao {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.localizacao h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.localizacao iframe {
+  border-radius: 12px;
+  width: 90%;
+  height: 300px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.322);
+}
+
+/* ----------------------------
+   6. Botões de Ação
+---------------------------- */
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0 10px;
+  margin-bottom: 45px;
+}
+
+.botoes a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #25D366;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.botoes a:hover {
+  background-color: #1ebe56;
+}
+
+.botoes a.instagram {
+  background-color: #E1306C;
+}
+
+.botoes a.instagram:hover {
+  background-color: #b72b58;
+}
+
+/* Estilo do botão de Login*/
+
+.frame {
+  width: 90%;
+  margin: 40px auto;
+  text-align: center;
+}
+button {
+  margin: auto;
+}
+
+/* Estiliza o link Login como botão usando a classe btn-9 */
+.navbar-nav .btn-9 {
+  position: relative;
+  display:inline-block;
+  border: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  left: 0; /* removido o left: 30px que desalinhava */
+  padding: 10px 28px ;
+  color: white !important;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  min-width: 120px;
+  background: transparent;
+  z-index: 1;
+}
+
+/* Efeito de fundo com gradiente */
+.navbar-nav .btn-9::after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(315deg, rgb(80, 200, 120) 0%, rgb(0, 153, 0) 100%); 
+  transition: all 0.3s ease;
+  border-radius: 6px;
+}
+
+/* Hover bonito como botão */
+.navbar-nav .btn-9:hover {
+  background: transparent;
+  box-shadow: 
+    4px 4px 6px 0 rgba(255,255,255,.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+  color: white !important;
+}
+
+/* Efeito de transformação do gradiente */
+.navbar-nav .btn-9:hover::after {
+  transform: scale(2) rotate(180deg);
+  box-shadow: 
+    4px 4px 6px 0 rgba(255,255,255,.5),
+    -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+}
+
+/* Botão Voltar ao Topo */
+#voltarTopo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background: #2da756;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 25px 35px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.destaque {
+  color: #18a2e2;
+  font-weight: bold;
+}
+
+.cnpj {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* ----------------------------
+   Rodapé
+---------------------------- */
+.rodape {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.rodape a {
+  color: #000000;
+  text-decoration: none !important;
+  transition: color 0.3s ease;
+}
+
+.rodape a:hover {
+  color: #9600d6;
+  text-decoration: underline;
+}
+
+
+
+
+/* ----------------------------
+   9. Responsivo para conteúdo
+---------------------------- */
+
+/*  applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+
+
+/* Estiliza a navbar */
+.navbar {
+  box-shadow: 0 2px 10px #fdfdfd78;
+  border-radius: 15px;
+  padding: 12px 0;
+  background-color: #00000023 !important; /* Cor de fundo */
+}
+
+/* Estiliza o logo */
+.navbar-brand img.logo {
+  height: 4auto;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand img.logo:hover {
+  transform: scale(1.05);
+}
+
+/* Estiliza os links do menu */
+.navbar-nav .nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  padding: 10px 15px;
+  transition: color 0.3s, background 0.3s;
+  border-radius: 6px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffffff;         
+  background-color: #8411aa; /* Leve fundo claro ao passar o mouse */
+}
+
+/* Estiliza o botão do menu hamburguer */
+.navbar-toggler {
+  border-color: #ffffff;
+  margin-right: 10px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+  /* Impede rolagem lateral em dispositivos menores */
+  html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Reduz o tamanho da logo para caber melhor em telas pequenas */
+  .logo {
+    height: 1.55em;
+    width: 7.25em;
+  }
+
+  /* Reduz o espaçamento entre os links do menu */
+  nav a {
+    margin: 0 5px;
+  }
+
+  /* Coloca o conteúdo em coluna e centraliza no mobile */
+  .conteudo {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  /* Dá espaço abaixo das imagens no conteúdo */
+  .conteudo img {
+    margin-bottom: 25px;
+  }
+
+  /* Reduz o tamanho do título da descrição */
+  .descricao h2 {
+    font-size: 1.7rem;
+  }
+
+  /* Reduz o tamanho do parágrafo da descrição */
+  .descricao p {
+    font-size: 1rem;
+  }
+
+  /* Ajusta a seção de descrição para melhor leitura */
+  section.descricao {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0 15px;
+    margin: 40px auto;
+    text-align: left;
+  }
+
+h1, h2, .titulo {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+
+  /* Oculta o botão "Voltar ao Topo" completamente no mobile */
+  #voltarTopo {
+    display: none !important;
+  }
+
+  /* Ajusta a descrição visível ao passar o mouse em itens do carrossel */
+  .carouselEsteira-item .descricao-hover {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+
+
+
+}
+
+
+
+
+@media (max-width: 991.98px) {
+
+  /* Impede rolagem lateral em dispositivos menores */
+  html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Reduz o tamanho da logo para caber melhor em telas pequenas */
+  .logo {
+    height: 1.55em;
+    width: 7.25em;
+  }
+
+  /* Reduz o espaçamento entre os links do menu */
+  nav a {
+    margin: 0 5px;
+  }
+
+  /* Coloca o conteúdo em coluna e centraliza no mobile */
+  .conteudo {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  /* Dá espaço abaixo das imagens no conteúdo */
+  .conteudo img {
+    margin-bottom: 25px;
+  }
+
+  /* Reduz o tamanho do título da descrição */
+  .descricao h2 {
+    font-size: 1.7rem;
+  }
+
+  /* Reduz o tamanho do parágrafo da descrição */
+  .descricao p {
+    font-size: 1rem;
+  }
+
+  /* Ajusta a seção de descrição para melhor leitura */
+  section.descricao {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0 15px;
+    margin: 40px auto;
+    text-align: left;
+  }
+
+h1, h2, .titulo {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+
+  /* Oculta o botão "Voltar ao Topo" completamente no mobile */
+  #voltarTopo {
+    display: none !important;
+  }
+
+  /* Ajusta a descrição visível ao passar o mouse em itens do carrossel */
+  .carouselEsteira-item .descricao-hover {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  /* Estiliza o botão do menu hamburguer */
+  .navbar-toggler {
+    border-color: #ffffff;
+    margin-right: 10px;
+  }
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+}
+
+
+
+/* `xxl` applies to x-large devices (large desktops, less than 1400px) */
+
+@media (max-width: 1399.98px) { 
+
+  /* Impede rolagem lateral em dispositivos menores */
+  html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  /* Reduz o tamanho da logo para caber melhor em telas pequenas */
+  .logo {
+    height: 1.55em;
+    width: 7.25em;
+  }
+
+  /* Reduz o espaçamento entre os links do menu */
+  nav a {
+    margin: 0 5px;
+  }
+
+  /* Coloca o conteúdo em coluna e centraliza no mobile */
+  .conteudo {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  /* Dá espaço abaixo das imagens no conteúdo */
+  .conteudo img {
+    margin-bottom: 25px;
+  }
+
+  /* Reduz o tamanho do título da descrição */
+  .descricao h2 {
+    font-size: 1.7rem;
+  }
+
+  /* Reduz o tamanho do parágrafo da descrição */
+  .descricao p {
+    font-size: 1rem;
+  }
+
+  /* Ajusta a seção de descrição para melhor leitura */
+  section.descricao {
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0 15px;
+    margin: 40px auto;
+    text-align: left;
+  }
+
+h1, h2, .titulo {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+
+  /* Oculta o botão "Voltar ao Topo" completamente no mobile */
+  #voltarTopo {
+    display: none !important;
+  }
+
+  /* Ajusta a descrição visível ao passar o mouse em itens do carrossel */
+  .carouselEsteira-item .descricao-hover {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+
+
+ }
